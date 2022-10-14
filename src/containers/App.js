@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import Login from "../pages/Login";
+import Homepage from "../pages/Homepage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="*" element={<Navigate to="/login" replace={true} />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/homepage" element={<Homepage />}></Route>
         </Routes>
       </Router>
     </div>

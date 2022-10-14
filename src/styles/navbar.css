@@ -1,0 +1,47 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    /* padding: 1em 0; */
+    height: 110px;
+}
+
+.Navbar img {
+    width: 80px;
+    height: 70px;
+    cursor: pointer;
+    transform: scale(1.5, 1);
+}
+
+.Navbar > .menu-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+
+.Navbar .menu {
+    cursor: pointer;
+    padding: .5em 1em;
+}
+
+.Navbar .menu:hover {
+    box-shadow: 5px 10px 10px #00000069;
+    border: 1px solid #00000004;
+    transition: box-shadow .5s;
+}
+
+.Navbar .menu > p {
+    font-size: 12px;
+    margin: 0 0;
+}
+
+.Navbar .menu > p:first-child {
+    font-weight: bold;
+    color: black;
+}
+
+.Navbar .right-content > div {
+    font-size: 12px !important;
+}
