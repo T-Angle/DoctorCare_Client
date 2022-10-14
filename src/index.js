@@ -3,10 +3,6 @@ import ReactDOM from "react-dom/client";
 // import './styles/styles.scss';
 import App from "./containers/App";
 import reportWebVitals from "./reportWebVitals";
-import axios from "axios";
-
-axios.defaults.baseURL = "http://localhost:3000/api";
-axios.defaults.headers.post["Content-Type"] = "application/json";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

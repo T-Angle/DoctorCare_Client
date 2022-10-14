@@ -1,5 +1,4 @@
 import "./App.scss";
-import logo from "../assets/images/logo.jpg";
 
 import {
   BrowserRouter as Router,
@@ -8,7 +7,7 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import Login from "../components/Login";
+import Login from "../pages/Login";
 
 function App() {
   return (
