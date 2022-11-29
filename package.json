@@ -25,7 +25,13 @@
     "react-select": "^4.3.1",
     "react-time-picker": "^4.4.1",
     "react-toastify": "^8.0.2",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.16",
+    "@mui/material": "^5.10.15",
+    "socket.io-client": "^4.5.4",
+    "react-qr-code": "^2.0.8"
   },
   "scripts": {
     "start": "react-scripts start",
