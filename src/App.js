@@ -25,7 +25,7 @@ import ChatIndex from "./pages/Chat/index";
 import FourOFour from "./pages/FourOFour/index";
 
 // appointments
-import Test from "./Appointment/test"
+import Appointment from "./Appointment/Appointment"
 
 function App() {
   return (
@@ -43,7 +43,7 @@ function App() {
             <Route exact path="/admin-login" component={AdminLogin} />
 
 
-            <Route exact path="/appointment-app" component={Test} />
+            <Route exact path="/appointment-app" component={Appointment} />
 
             {/* Doctor Master */}
             <PrivateRoute path="/doctor" role="doctor">
