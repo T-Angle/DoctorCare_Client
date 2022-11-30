@@ -1,3 +1,4 @@
+            </div>
 import React, { useEffect, useState } from "react";
 import "./style.scss";
 import axios from "axios";
@@ -44,10 +45,6 @@ const Index = () => {
       )}`
     );
   };
-
-  const goAppointmentApp = (doctorId, appointmentId) => {
-    history.push(`/appointment-app?appointmentid=${appointmentId}&doctorid=${doctorId}`)
-  }
 
   // data loading
   if (isLoading)
@@ -111,7 +108,6 @@ const Index = () => {
                                 Pending
                               </button>
                             ) : (
-                              <div>
                               <button
                                 type="button"
                                 className="btn shadow-none"
@@ -124,16 +120,6 @@ const Index = () => {
                               >
                                 go council
                               </button>
-                              <button
-                                type="button"
-                                className="btn shadow-none"
-                                onClick={() => goAppointmentApp(
-                                  appointment.doctor._id,
-                                  appointment._id
-                                )}>
-                                Start appointment
-                              </button>
-                              </div>
                             )}
                           </td>
                         </tr>
