@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/images/logo.jpg";
+import logo from "../assets/images/clinic-unsplash.jpg";
 
 function Login() {
   return (
@@ -9,7 +9,7 @@ function Login() {
           <div className="col-sm-6 text-black">
             <div className="px-5 ms-xl-4">
               <img src={logo} alt={logo} className="logo-icon" />
-              {/* <div className="h1 fw-bold mb-0">Appointment Booking System</div> */}
+              {/* <div className="h1 fw-bSold mb-0">Appointment Booking System</div> */}
             </div>
 
             <div className="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
