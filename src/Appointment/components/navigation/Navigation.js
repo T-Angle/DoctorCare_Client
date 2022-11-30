@@ -19,6 +19,7 @@ function Navigation(props) {
   const [open, setOpen] = useState(false)
 
   function handleMenuItemClick(link) {
+    props.tellCurrentPath(link)
     history.push(link)
     setOpen(false)
     console.log(link)

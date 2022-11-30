@@ -1,6 +1,6 @@
 //import router
 import { Route, Switch, Link, BrowserRouter } from 'react-router-dom'
-
+import { useState, useEffect } from 'react'
 //import component
 import CounterCard from './components/counterCard/CounterCard'
 import QrCard from './components/qrCard/QrCard'
@@ -33,13 +33,24 @@ function DevTreatmentPage() {
 //folder Appointment se dc to chuc nhu 1 react app, trong do App.js == Appointment.js (file nay)
 
 export default function Appointment() {
+
+  const [currentPath, setCurrentPath] = useState('')
+
+  const getCurrentPath = (url) => {
+    setCurrentPath(url)
+  }
+
+  console.log('current path',currentPath)
+
+
   return (
       <div className="Appointment">
         <Toolbar/>
         <BrowserRouter>
+          {(currentPath == '/') ? <></> : <Navigation tellCurrentPath={getCurrentPath}/>}
           <Switch>
             <Route exact path="/" component={HomeIndex} />
-            <Route exact path={baseURL} component={Navigation}/>
+            <Route exact path={baseURL + "/"} component={Examination}/>
             <Route exact path={baseURL + "/tests"} render={props => <DevTestsPage {...props}/>} />
             <Route exact path={baseURL + "/treatment"} render={props => <DevTreatmentPage {...props}/>} />
           </Switch>
