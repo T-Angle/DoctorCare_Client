@@ -1,0 +1,21 @@
+component de chi dung de handle ui -> data bo vao ma co thay doi thi truyen vo component = cach nao ?
+
+trinh bay slide
+intro: noi li do lam, lam cai gi
+2. SYs archi: them slide ve so do he thong
+phai noi ro phan nao dong gop nhu the nao
+moi thanh phan ve theo kieu
+API             FE
+(express) ----- (react)
+
+3. desgin
+-ui
+-api structure
+- folder structure
+4. functions
+so so chuc nang chung cua ca he thong
+
+chu y thuyet trinh
+chu y lam github tot
+chu y chia viec deu de ai cung hieu? cai code
+commit chia deu ra cac ngay cac tuan
