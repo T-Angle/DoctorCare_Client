@@ -21,26 +21,26 @@ function Login() {
                   LOGIN
                 </h3>
 
-                <div className="form-outline mb-4">
-                  <input
-                    type="email"
-                    // id="form2Example18"
-                    className="form-control form-control-lg"
-                  />
+                <div className=" mb-4">
                   <label className="form-label" htmlFor="form2Example18">
                     Email address
                   </label>
+                  <input
+                    type="email"
+                    id="form2Example18"
+                    className="form-control form-control-lg"
+                  />
                 </div>
 
-                <div className="form-outline mb-4">
+                <div className="mb-4">
+                  <label className="form-label" htmlFor="form2Example28">
+                    Password
+                  </label>
                   <input
                     type="password"
                     // id="form2Example28"
                     className="form-control form-control-lg"
                   />
-                  <label className="form-label" htmlFor="form2Example28">
-                    Password
-                  </label>
                 </div>
 
                 <div className="pt-1 mb-4">
