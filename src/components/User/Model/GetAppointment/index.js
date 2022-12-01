@@ -110,7 +110,7 @@ const GetAppointment = ({ hidemodal, doctor }) => {
                                                 defaultValue={patient ? patient.phone : null}
                                                 {...register("phone", { required: "Phone number is required",
                                                 pattern: {
-                                                    value: /^\(?([0-9]{3})\)?([0-9]{8})$/,
+                                                    value: /^\(?([0-9]{2})\)?([0-9]{8})$/,
                                                     message: "Number isn't valid."
                                                 } })}
                                                 className="form-control shadow-none"

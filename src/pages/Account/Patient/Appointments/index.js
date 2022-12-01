@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./style.scss";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
 import { apiURL } from "../../../../utils/apiURL";
+import { useHistory, useRouteMatch } from "react-router-dom";
 
 const Index = () => {
   const history = useHistory();
@@ -12,6 +12,8 @@ const Index = () => {
   const [header] = useState({
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
+
+  let { path, url } = useRouteMatch();
 
   useEffect(() => {
     // Fetch Appointments
@@ -46,8 +48,10 @@ const Index = () => {
   };
 
   const goAppointmentApp = (doctorId, appointmentId) => {
-    history.push(`/appointment-app?appointmentid=${appointmentId}&doctorid=${doctorId}`)
+    history.push(`/appointment-app/${appointmentId}`)
   }
+
+  // console.log('object iddd ', appointments.id);
 
   // data loading
   if (isLoading)

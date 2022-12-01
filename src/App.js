@@ -43,7 +43,7 @@ function App() {
             <Route exact path="/admin-login" component={AdminLogin} />
 
 
-            <Route exact path="/appointment-app" component={Appointment} />
+            <Route path="/appointment-app/:id/" component={Appointment} />
 
             {/* Doctor Master */}
             <PrivateRoute path="/doctor" role="doctor">

@@ -34,8 +34,9 @@ const Index = () => {
             </div>
             <div className="col-12 py-4 py-lg-5 text-center">
               <h3 className="font-weight-bold mb-0">
-                Found {doctors ? doctors.length : null} doctors.
+               Not Found 
               </h3>
+              <span>Total {doctors ? doctors.length : null} doctors in system.</span>
             </div>
           </div>
         </div>
