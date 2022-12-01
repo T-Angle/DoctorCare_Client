@@ -10,7 +10,7 @@ import {
 
 import { withRouter } from "react-router-dom";
 
-const baseURL = "/appointment-app"
+const baseURL = "/appointment-app/"
 
 
 
@@ -29,25 +29,25 @@ function Navigation(props) {
       name: 'Homepage',
       icon: <Home/>,
       link: '/',
-      onClick: () => handleMenuItemClick('/')
+      onClick: () => window.location.href='/'
     },
     {
       name: 'Appointment',
       icon: <Assignment/>,
-      link: baseURL+'/',
-      onClick: () => handleMenuItemClick(baseURL+'/')
+      link: baseURL+ props.id + '/',
+      onClick: () => handleMenuItemClick(baseURL+ props.id + '/')
     },
     {
       name: 'Test list',
       icon: <Biotech/>,
-      link: baseURL+'/tests',
-      onClick: () => handleMenuItemClick(baseURL+'/tests')
+      link: baseURL+ props.id +'/tests',
+      onClick: () => handleMenuItemClick(baseURL+ props.id +'/tests')
     },
     {
       name: 'Treatment',
       icon: <Healing/>,
-      link: baseURL+'/treatment',
-      onClick: () => handleMenuItemClick(baseURL+'/treatment')
+      link: baseURL+ props.id +'/treatment',
+      onClick: () => handleMenuItemClick(baseURL+ props.id +'/treatment')
     },
 
   ]

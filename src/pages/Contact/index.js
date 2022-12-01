@@ -75,7 +75,7 @@ const Index = () => {
                     </div>
                     <div className="pl-3">
                       <p>phone number</p>
-                      <small>+0123 4567 9876</small>
+                      <small>+0123 4567 89</small>
                     </div>
                   </div>
                 </div>
@@ -89,7 +89,7 @@ const Index = () => {
                     </div>
                     <div className="pl-3">
                       <p>email address</p>
-                      <small>example@gmail.com</small>
+                      <small>truongvans1010@gmail.com</small>
                     </div>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ const Index = () => {
                     </div>
                     <div className="pl-3">
                       <p>fax address</p>
-                      <small>+0123 4567 9876</small>
+                      <small>+0123 4567 89</small>
                     </div>
                   </div>
                 </div>
@@ -117,7 +117,7 @@ const Index = () => {
                     </div>
                     <div className="pl-3">
                       <p>location</p>
-                      <small>123 Buisness Avenue, NYC</small>
+                      <small>123 UIT, HCMC</small>
                     </div>
                   </div>
                 </div>
@@ -265,7 +265,7 @@ const Index = () => {
             <div className="col-12 map-column">
               <iframe
                 title="Our locatin find in google map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.592234257487!2d90.32280281543704!3d23.8686092901661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a9e728879b7600d!2sAshulia%20Model%20Town%20Park!5e0!3m2!1sen!2sbd!4v1600719678565!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.23117123521!2d106.80047917444418!3d10.870014157461684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiAtIMSQSFFHIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1669882529182!5m2!1svi!2s"
                 width="100%"
                 height="450"
                 frameBorder="0"

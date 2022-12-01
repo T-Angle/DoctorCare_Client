@@ -1,4 +1,5 @@
-import Logo from '../assets/static/logo.png'
+// import Logo from '../assets/static/logo.png'
+import Logo from '../assets/images/logo.jpg'
 import AuthBg from '../assets/static/authbg.jpg'
 import About from '../assets/static/about.png'
 import Contact from '../assets/static/contact.png'
