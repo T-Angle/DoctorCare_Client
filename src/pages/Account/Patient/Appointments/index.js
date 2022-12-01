@@ -1,4 +1,3 @@
-            </div>
 import React, { useEffect, useState } from "react";
 import "./style.scss";
 import axios from "axios";
