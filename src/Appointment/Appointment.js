@@ -1,5 +1,5 @@
 //import router
-import { Route, Switch, Link, BrowserRouter } from 'react-router-dom'
+import { Route, Switch, Link, BrowserRouter, useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 //import component
 import CounterCard from './components/counterCard/CounterCard'
@@ -10,7 +10,7 @@ import Navigation from './components/navigation/Navigation'
 import HomeIndex from '../pages/Home/index'
 import { Toolbar } from '@mui/material'
 
-const baseURL = "/appointment-app"
+const baseURL = "/appointment-app/"
 
 function DevTestsPage() {
   return (
@@ -42,17 +42,19 @@ export default function Appointment() {
 
   console.log('current path',currentPath)
 
+  let { id } = useParams();
 
+  console.log(id)
   return (
       <div className="Appointment">
         <Toolbar/>
         <BrowserRouter>
-          {(currentPath == '/') ? <></> : <Navigation tellCurrentPath={getCurrentPath}/>}
+          {(currentPath == '/') ? <></> : <Navigation id={id} tellCurrentPath={getCurrentPath}/>}
           <Switch>
-            <Route exact path="/" component={HomeIndex} />
-            <Route exact path={baseURL + "/"} component={Examination}/>
-            <Route exact path={baseURL + "/tests"} render={props => <DevTestsPage {...props}/>} />
-            <Route exact path={baseURL + "/treatment"} render={props => <DevTreatmentPage {...props}/>} />
+
+            <Route exact path={baseURL + id + "/"} component={Examination}/>
+            <Route exact path={baseURL + id +"/tests"} render={props => <DevTestsPage {...props}/>} />
+            <Route exact path={baseURL + id +"/treatment"} render={props => <DevTreatmentPage {...props}/>} />
           </Switch>
         </BrowserRouter>
       </div>
