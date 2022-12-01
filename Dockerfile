@@ -9,8 +9,8 @@ RUN npm install --force
 
 COPY . /react-app
 
-RUN npm run build
+# RUN npm run build
 
-# CMD ["npm", "start"]
+CMD ["npm", "start"]
 
 EXPOSE 3000
