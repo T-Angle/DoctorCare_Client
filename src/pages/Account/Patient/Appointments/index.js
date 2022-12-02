@@ -48,7 +48,9 @@ const Index = () => {
   };
 
   const goAppointmentApp = (doctorId, appointmentId) => {
+    console.log(`/appointment-app/${appointmentId}`)
     history.push(`/appointment-app/${appointmentId}`)
+
   }
 
   // data loading
