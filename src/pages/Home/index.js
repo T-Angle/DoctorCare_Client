@@ -65,7 +65,7 @@ const Index = () => {
           <div className="container mb-4">
             <div className="row">
               <div className="col-12 text-center">
-                <h2>Nearset Doctors</h2>
+                <h2>Nearest Doctors</h2>
               </div>
             </div>
           </div>
