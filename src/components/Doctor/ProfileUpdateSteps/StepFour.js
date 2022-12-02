@@ -7,8 +7,8 @@ import { apiURL } from "../../../utils/apiURL";
 
 const StepFour = ({ responsestep, id }) => {
   const [isLoading, setLoading] = useState(false);
-  const [longitude, setLongitude] = useState(null);
-  const [latitude, setLatitude] = useState(null);
+  const [longitude, setLongitude] = useState('106.7824544');
+  const [latitude, setLatitude] = useState('10.8826482');
 
   useEffect(() => {
     const geo = navigator.geolocation;
