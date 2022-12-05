@@ -13,4 +13,9 @@ COPY . /react-app
 
 CMD ["npm", "start"]
 
+<<<<<<< HEAD
 EXPOSE 3000
+=======
+EXPOSE 3000
+
+>>>>>>> 5e0a5d3f13c38349cd2f4bda8e830499089fad15
