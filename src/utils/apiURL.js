@@ -10,11 +10,7 @@ const setBaseUrl = () => {
 	return "http://localhost:8080/api/v1";
 };
 
-<<<<<<< HEAD
-export const apiURL = setBaseUrl();
-=======
 
 export const apiURL = setBaseUrl();
 
 
->>>>>>> 5e0a5d3f13c38349cd2f4bda8e830499089fad15
