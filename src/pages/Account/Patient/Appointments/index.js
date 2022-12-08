@@ -118,7 +118,7 @@ const Index = () => {
                               <div>
                               <button
                                 type="button"
-                                className="btn shadow-none"
+                                className="btn shadow-none mx-4 p-2"
                                 onClick={() =>
                                   goChatPage(
                                     appointment.doctor._id,
@@ -135,7 +135,7 @@ const Index = () => {
                                 to={`/patient/appoinnment-app/${appointment._id}`}
                               >
                                 <button
-                                  type6="button"
+                                  type="button"
                                   className="btn shadow-none"
                                 >
                                   Start appointment
