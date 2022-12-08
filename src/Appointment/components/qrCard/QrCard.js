@@ -6,10 +6,7 @@ import {
 
 export default function QrCard(props) {
 //nhan vao props la 1 ma so lich hen
-  const expectedSampleProps = {
-    appointmentId: "89321321983abc"
 
-  }
   //test only
   const appointmentId = props.appointmentId ? props.appointmentId : '4032949934'
 
@@ -34,6 +31,7 @@ export default function QrCard(props) {
 
             value={appointmentId}
             level='Q'/>
+        <Typography variant="h5" style={{ fontSize: "20px" }}>Appointment ID: {appointmentId}</Typography>
         </CardContent>
         <CardActions>
             <Button size="medium">close</Button>

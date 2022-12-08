@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./style.scss";
 import axios from "axios";
-import { useHistory, useRouteMatch } from "react-router-dom";
+import { useHistory, useRouteMatch, NavLink } from "react-router-dom";
 import { apiURL } from "../../../../utils/apiURL";
 
 const Index = () => {
@@ -47,11 +47,11 @@ const Index = () => {
     );
   };
 
-  const goAppointmentApp = (doctorId, appointmentId) => {
-    console.log(`/appointment-app/${appointmentId}`)
-    history.push(`/appointment-app/${appointmentId}`)
-
-  }
+  // const goAppointmentApp = (doctorId, appointmentId) => {
+  //   // console.log(`/appointment-app/${appointmentId}`)
+  //   history.push(`/patient/appointment-app/${appointmentId}`)
+  //
+  // }
 
   // data loading
   if (isLoading)
@@ -128,15 +128,19 @@ const Index = () => {
                               >
                                 go council
                               </button>
-                              <button
-                                type="button"
-                                className="btn shadow-none"
-                                onClick={() => goAppointmentApp(
-                                  appointment.doctor._id,
-                                  appointment._id
-                                )}>
-                                Start appointment
-                              </button>
+                              <NavLink
+                                exact
+                                activeClassName="is-Active"
+                                className="btn btn-block shadow-none"
+                                to={`/patient/appoinnment-app/${appointment._id}`}
+                              >
+                                <button
+                                  type6="button"
+                                  className="btn shadow-none"
+                                >
+                                  Start appointment
+                                </button>
+                              </NavLink>
                               </div>
                             )}
                           </td>

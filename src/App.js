@@ -26,6 +26,7 @@ import FourOFour from "./pages/FourOFour/index";
 
 // appointments
 import Appointment from "./Appointment/Appointment"
+// import Doctor from "./Appointment/Doctor"
 
 function App() {
   return (
@@ -42,8 +43,6 @@ function App() {
             <Route exact path="/reset" component={ResetIndex} />
             <Route exact path="/admin-login" component={AdminLogin} />
 
-
-            <Route path="/appointment-app/:id/" component={Appointment} />
 
             {/* Doctor Master */}
             <PrivateRoute path="/doctor" role="doctor">
