@@ -1,0 +1,66 @@
+[
+  {
+    "id": 12345,
+    "name": "Nguyen Van A",
+    "age": 23,
+    "address": "123 NCT, Q10, HCMC",
+    "gender": "m",
+    "ssn": 886677886
+  },
+  {
+    "id": 88889,
+    "name": "Tran Thi B",
+    "age": 43,
+    "address": "321 PDP, QPN, HCMC",
+    "gender": "f",
+    "ssn": 57575757
+  },
+  {
+    "id": 45672,
+    "name": "Tran C",
+    "age": 56,
+    "address": "321 GP, QTP, HCMC",
+    "gender": "m",
+    "ssn": 65498534
+  },
+  {
+    "id": 11230,
+    "name": "Jack",
+    "age": 30,
+    "address": "543 QT, QGV, HCMC",
+    "gender": "m",
+    "ssn": 21203200
+  },
+  {
+    "id": 8888,
+    "name": "Tran Thi B",
+    "age": 43,
+    "address": "321 PDP, QPN, HCMC",
+    "gender": "f",
+    "ssn": 57575757
+  },
+  {
+    "id": 8888,
+    "name": "Tran Thi B",
+    "age": 43,
+    "address": "321 PDP, QPN, HCMC",
+    "gender": "f",
+    "ssn": 57575757
+  },
+  {
+    "id": 8888,
+    "name": "Tran Thi B",
+    "age": 43,
+    "address": "321 PDP, QPN, HCMC",
+    "gender": "f",
+    "ssn": 57575757
+  },
+  {
+    "id": 8888,
+    "name": "Tran Thi B",
+    "age": 43,
+    "address": "321 PDP, QPN, HCMC",
+    "gender": "f",
+    "ssn": 57575757
+  }
+]
