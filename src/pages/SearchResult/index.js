@@ -14,7 +14,7 @@ const Index = () => {
     //search doctors
     const searchDoctors = async () => {
       try {
-        const response = await axios.get(`http://localhost:8080/api/v1/client/doctors`);
+        const response = await axios.get(`${apiURL}/api/v1/client/doctors`);
         setDoctors(response.data);
       } catch (error) {
         if (error) console.log(console.response);

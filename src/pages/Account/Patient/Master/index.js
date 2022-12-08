@@ -14,6 +14,8 @@ import Loader from "../../../../components/Loader/index";
 import FourOFour from "../../../FourOFour/index";
 import { checkIfError } from "../../../../utils/Error";
 
+import Appointment from "../../../../Appointment/Appointment"
+
 const Master = () => {
   const [show, setShow] = useState(false);
   const [user, setUser] = useState({});
@@ -95,6 +97,11 @@ console.log(header)
               exact
               path="/patient/appointments"
               component={AppointmentIndex}
+            />
+            <Route
+              exact
+              path="/patient/appoinnment-app/:id"
+              component={Appointment}
             />
             <Route path="*" component={FourOFour} />
           </Switch>

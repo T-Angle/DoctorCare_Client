@@ -96,7 +96,15 @@ const Index = ({ doctor, editdialog }) => {
           <Icon icon={ic_info_outline} size={20} />
           <span>Requests</span>
         </NavLink>
-
+        <NavLink
+          exact
+          activeClassName="is-Active"
+          className="btn btn-block shadow-none"
+          to={`/doctor/appoinment-app/doctor/${doctor._id}`}
+        >
+          <Icon icon={ic_info_outline} size={20} />
+          <span>Queue</span>
+        </NavLink>
         <button
           type="button"
           className="btn btn-block shadow-none"

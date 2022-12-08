@@ -13,6 +13,8 @@ import DashboardIndex from "../Dashboard/index";
 import AppointmentsIndex from "../Appointment/index";
 import RequestsIndex from "../Request/index";
 
+import Doctor from "../../../../Appointment/Doctor"
+
 import StepOne from "../../../../components/Doctor/ProfileUpdateSteps/StepOne";
 import StepTwo from "../../../../components/Doctor/ProfileUpdateSteps/StepTwo";
 import StepThree from "../../../../components/Doctor/ProfileUpdateSteps/StepThree";
@@ -226,6 +228,11 @@ const Master = () => {
               component={AppointmentsIndex}
             />
             <Route exact path="/doctor/requests" component={RequestsIndex} />
+            <Route
+              exact
+              path="/doctor/appoinment-app/doctor/:doctorid"
+              component={Doctor}
+            />
           </Switch>
         </div>
       </div>

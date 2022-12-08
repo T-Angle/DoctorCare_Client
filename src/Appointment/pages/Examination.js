@@ -1,15 +1,20 @@
 import io from 'socket.io-client'
 import { useState, useEffect } from 'react'
+// import ProfileCard from '../../../components/profileCard/ProfileCard'
+// import VerStepper from '../../../components/stepper/Stepper'
+import QrCard from '../components/qrCard/QrCard'
+import CounterCard from '../components/counterCard/CounterCard'
 
-import QrCard from './components/qrCard/QrCard'
-import CounterCard from './components/counterCard/CounterCard'
+// import { Typography, Box, ButtonGroup, Button } from '@mui/material';
 
 import { useParams } from 'react-router-dom'
+
+
 
 const socket = io.connect(process.env.REACT_APP_BACKEND_URL)
 
 
-export default function Appointment() {
+export default function Examination(props) {
   //kiem tra ton record cho appId nay chua? neu co roi thi load record
   //chua co tao record moi
 
@@ -20,7 +25,7 @@ export default function Appointment() {
   const { id } = useParams()
 
   const fetchSession = ()=> {
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/v1/appointment-app/${id}/session`)
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/appointment-app/${id}/session`)
       .then((res) => res.json())
       .then((data) => {
         console.log('received data obj ', data)
@@ -53,7 +58,7 @@ export default function Appointment() {
           style={{display:"flex",flexDirection:"column",alignItems:"center", justifyContent: "center"}}>
       {
         {
-          false: <QrCard appointmentId={id}/>,
+          false: <QrCard/>,
           true:
             <div>
             <CounterCard order={order} currentOrder={currOrder} orderPickedTime='14:30'/>

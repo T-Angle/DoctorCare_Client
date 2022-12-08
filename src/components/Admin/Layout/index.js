@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./style.scss";
 import axios from "axios";
-import Icon from "react-icons-kit";
 import { apiURL } from "../../../utils/apiURL";
+import Icon from "react-icons-kit";
 import { standby } from "react-icons-kit/iconic";
 import { NavLink, useHistory } from "react-router-dom";
 import { ic_dashboard, ic_people } from "react-icons-kit/md";
@@ -24,7 +24,7 @@ const Index = () => {
     const fetchNotifications = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/api/v1/client/doctors`
+          `${apiURL}/api/v1/client/doctors`
         );
         if (response.status === 200) {
           setNotifications(response.data);
