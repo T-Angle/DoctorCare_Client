@@ -3,7 +3,7 @@ import { Box, Grid, TextField, Button, ButtonGroup,
   Table, TableHead, TableBody, TableCell, TableRow} from '@mui/material'
 import { useParams } from 'react-router-dom'
 
-const baseURL = process.env.REACT_APP_BACKEND_URL
+const baseURL = 'http://api.alodoctor.space'
 
 
 
