@@ -6,7 +6,7 @@ import CounterCard from './components/counterCard/CounterCard'
 
 import { useParams } from 'react-router-dom'
 
-const socket = io.connect(process.env.REACT_APP_BACKEND_URL)
+const socket = io.connect('http://api.alodoctor.space')
 
 
 export default function Appointment() {
@@ -20,7 +20,7 @@ export default function Appointment() {
   const { id } = useParams()
 
   const fetchSession = ()=> {
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/v1/appointment-app/${id}/session`)
+    fetch(`http://api.alodoctor.space/api/v1/appointment-app/${id}/session`)
       .then((res) => res.json())
       .then((data) => {
         console.log('received data obj ', data)
