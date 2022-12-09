@@ -24,7 +24,7 @@ const Index = () => {
     const fetchNotifications = async () => {
       try {
         const response = await axios.get(
-          `${apiURL}/api/v1/client/doctors`
+          `${apiURL}/client/doctors`
         );
         if (response.status === 200) {
           setNotifications(response.data);
